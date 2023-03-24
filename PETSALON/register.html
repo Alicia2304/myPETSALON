@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="principal">
+        <img class="myPetsalon" src="myPetsalon.png" alt="myPetsalon">
+        <h1> Bienvenido a myPet salon</h1>
+    </div>
+    
+    
+        
+        <div Class="formulario">
+            <img class="imgservicios" src="imgservicios.png" alt="imgservicios">
+            <h3>Registra tu mascota</h3>
+           
+
+
+            <label>Nombre:<input type="text" placeholder="Ingresa el nombre de la mascota" id="txtNombre">
+           <label>Genero:<input type="text" placeholder="Ingresa el genero de la mascota" id="txtGenero">
+            <label>Raza:</label><input type="text" placeholder="Ingresa la raza de la mascota" id="txtRaza">
+            <label>Edad:</label><input type="text" placeholder="Ingresa la edad de la mascota" id="txtEdad">
+            
+
+            <label>Selecciona un servicio
+            <select id="selServicio">
+                <option value="" disabled selectd>--Selecciona un servicio</option>
+                <option value="Selecciona un servicio">Selecciona un servicio</option>
+                <option value="Vacunas">Vacunas</option>
+                <option value="Grooming"> Grooming</option>
+                <option value="Baño">Baño de mascota</option>
+                <option value="Servicio completo de spa">Servicio completo de spa</option>
+                <option value="Servicios completos premium"> Servicios completos premium</option>
+                <option value="Servicio para cachorro"> Servicio para cachorro</option>
+
+            </select>
+            </label>
+
+            <select id="selSucursal">
+                <option value="" disabled selected>--Selecciona tu sucursal más cercana</option>
+                <option value="Acapulco">Sucursal Acapulco</option>
+                <option value="Ensenada">Sucursal Ensenada</option> 
+                <option value="Durango">Sucursal Durango</option>
+                <option value="Mexicali">Sucursal Mexicali</option>
+
+            </select>
+            <button onclick="registro();">Registrar</button>
+        </div>
+        
+        <img class="7 puntos" src="7 puntos.png" alt="7 puntos">
+        <h2>Mascotas en el sistema</h2>
+        
+        <div id="mascotas">
+          <!--aqui se insertaran las mascotas-->  
+            
+        </div>
+
+        
+    </div>
+    <script src="scripts/register.js"></script>
+    <script src="scripts/display.js"></script>
+</body>
+</html>
